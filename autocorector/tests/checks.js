@@ -11,6 +11,40 @@ import {mockdata} from "../utils/products.js";
 import {mockdata2} from "../utils/products2.js";
 //import {mockdata as studentmockproducts} from "../../src/constants/products";
 
+const myproduct = {
+  "products": [
+    {
+      "id": 66,
+      "title": "Steel Analog Couple Watches",
+      "description": "Elegant design, Stylish ,Unique & Trendy,Comfortable wear",
+      "price": 35,
+      "discountPercentage": 3.23,
+      "rating": 4.79,
+      "stock": 24,
+      "brand": "Eastern Watches",
+      "category": "womens-watches",
+      "thumbnail": "https://dummyjson.com/image/i/products/66/thumbnail.jpg",
+      "images": [
+        "https://dummyjson.com/image/i/products/66/1.jpg",
+        "https://dummyjson.com/image/i/products/66/2.jpg",
+        "https://dummyjson.com/image/i/products/66/3.jpg",
+        "https://dummyjson.com/image/i/products/66/4.JPG",
+        "https://dummyjson.com/image/i/products/66/thumbnail.jpg"
+      ]
+    }
+  ]
+};
+
+jest.mock('../../components/constants/products', () => ( {
+  __esModule: false,
+  mockdata: myproduct  
+} ));
+
+
+
+afterAll(() => jest.resetAllMocks());
+
+
 let testinfo = {
     name: "La aplicación tiene un componente Header con el logo y el mensaje de bienvenida con tu nombre",
     score: 1,
@@ -115,12 +149,12 @@ testinfo = {
 }
 test(JSON.stringify(testinfo), async () => {
   render(<App/>);
-  const thebtn = await screen.findByTestId('button_7');
+  const thebtn = await screen.findByTestId('button_66');
   expect(thebtn).toBeEnabled();
   fireEvent.press(thebtn);
   const item_7 = await screen.findByTestId('detalle');
   expect(item_7).toBeEnabled();
-  expect(item_7).toHaveTextContent('Samsung Galaxy Book');
+  expect(item_7).toHaveTextContent('Steel Analog Couple Watches');
 
   const thebtn2 = await screen.findByTestId('volver');
   expect(thebtn2).toBeEnabled();
