@@ -93,7 +93,7 @@ test(JSON.stringify(testinfo), async () => {
 
 testinfo = {
   name: "La aplicación tiene un componente SearchPage con el cuadro buscador, con al menos un Text, un TextInput y un Button",
-  score: 2,
+  score: 1,
   msg_ok: "Componente SearchPage encontrado y con Text, TextInput y Button correctos",
   msg_error: "El componente SearchPage no se ha encontrado o no tiene el Text, TextInput y Button correctos"
 }
