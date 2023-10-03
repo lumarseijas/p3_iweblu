@@ -17,7 +17,7 @@
     "expo-status-bar": "~1.4.0",
     "jest-expo": "^46.0.1",
     "react": "^18.0.0",
-    "react-native": "0.69.6",
+    "react-native": "0.69.9",
     "react-test-renderer": "^18.2.0"
   },
   "devDependencies": {
