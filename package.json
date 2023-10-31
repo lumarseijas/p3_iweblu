@@ -11,6 +11,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
+  "capturesFolder": "miscapturas",
+  "capturesNumber": 2,
   "dependencies": {
     "autocorector": "^3.1.2",
     "expo":"~49.0.13",
