@@ -38,6 +38,7 @@ const mytestconfig = {
   loading_timeout_ms: 20
 };
 
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
 
 jest.mock('../../components/config/config', () => ( {
   __esModule: true,

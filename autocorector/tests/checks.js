@@ -35,6 +35,9 @@ const myproduct = {
   ]
 };
 
+jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');
+
+
 jest.mock('../../components/constants/products', () => ( {
   __esModule: false,
   mockdata: myproduct  
