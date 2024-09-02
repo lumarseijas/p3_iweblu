@@ -11,26 +11,28 @@
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
+  "capturesFolder": "miscapturas",
+  "capturesNumber": 2,
   "dependencies": {
     "autocorector": "^3.1.2",
-    "expo": "~46.0.9",
-    "expo-status-bar": "~1.4.0",
+    "expo":"~49.0.13",
+    "expo-status-bar": "~1.6.0",
     "jest-expo": "^46.0.1",
-    "react": "^18.0.0",
-    "react-native": "0.69.6",
+    "react": "18.2.0",
+    "react-native": "0.72.5",
     "react-test-renderer": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
+    "@babel/core": "^7.20.0",
     "@testing-library/jest-native": "^4.0.11",
     "@testing-library/react-native": "^11.0.0",
-    "jest": "^26.6.3"
+    "jest": "^29.2.1"
   },
   "info": {
     "githubURL": "IWEB-UPM/P3_RN_productos",
     "serverUrl": "https://aat.dit.upm.es/",
     "courseId": "396",
-    "assignmentId": "493"
+    "assignmentId": "8517"
   },
   "private": true
 }
