@@ -17,8 +17,8 @@ const App = () => {
   const download = async () => {
     if (CONFIG.use_server) {
       let array = fetch(CONFIG.server_url);
-      let json = await array.then((response) => response.json());
-      setProducts(json.products);      
+      let data = await array.then((response) => response.json());
+      setProducts(data.products);      
     }
     else {
       setProducts(mockdata.products);
@@ -33,7 +33,6 @@ const App = () => {
     }
     fetchData();
   }, []);
-
  
 
   return (
